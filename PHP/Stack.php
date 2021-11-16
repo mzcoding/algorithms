@@ -1,10 +1,33 @@
-<?php
+<?php declare(strict_types=1);
 
-/**
- * Created by GreenCodeDigital Inc.
- * User: Mzcoding <mzcoding@gmail.com>
- */
+namespace Algorithms;
+
+use Exception;
+
 class Stack
 {
+	protected array $stack = [];
 
+	public function __construct()
+	{
+	}
+
+	public function push(mixed $item)
+	{
+		$this->stack[] = $item;
+	}
+
+	public function pop(): mixed
+	{
+		if (!$this->isEmpty()) {
+			return array_pop($this->stack);
+		}
+
+		throw new Exception('Wrong element in this stack');
+	}
+
+	public function isEmpty(): bool
+	{
+		return empty($this->stack);
+	}
 }

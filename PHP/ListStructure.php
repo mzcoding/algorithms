@@ -1,8 +1,4 @@
-<?php
-/**
- * Created by GreenCodeDigital Inc.
- * User: Mzcoding <mzcoding@gmail.com>
- */
+<?php declare(strict_types=1);
 
 namespace Algorithms;
 
