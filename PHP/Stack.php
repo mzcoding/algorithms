@@ -12,7 +12,7 @@ class Stack
 	{
 	}
 
-	public function push(mixed $item)
+	public function push(mixed $item): void
 	{
 		$this->stack[] = $item;
 	}
